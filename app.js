@@ -6,6 +6,10 @@ const correctAnswers = document.getElementById('correct-answers');
 quizButton.addEventListener('click', () => {
     const nameVar = prompt('What is your name?');
 
+    if (nameVar === null){
+        return;
+    }
+
     if (!confirm(`${nameVar}, are you sure you want to start the quiz?`)){
         return;
     }
@@ -36,11 +40,11 @@ quizButton.addEventListener('click', () => {
     let resultPercent;
 
     resultPercent = Math.round((counter / 3) * 100);
-    
+
     if (counter === 3){
         resultString = `Congratulations, ${nameVar}! You answered ${resultPercent}% of the questions correctly!`;
     } else if (counter === 2){
-        resultString = `${nameVar}, you answered ${resultPercent}% of the questions correctly. Only one question off!`;
+        resultString = `${nameVar}, you answered ${resultPercent}% of the questions correctly. Only one question wrong!`;
     } else if (counter === 1){
         resultString = `${nameVar}, you only answered ${resultPercent}% of the questions correctly. You might want to brush up a bit!`;
     } else {
