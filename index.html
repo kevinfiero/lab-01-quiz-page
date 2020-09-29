@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-
 <body>
     <main>
         <h1>Pokémon Quiz!</h1>
-        <h2>Read the following Pokémon facts to prepare for a quiz!</h2>
+        <h2>Read the Pokémon facts below and start the quiz when you are ready!</h2>
+        <button id='quiz-button'>Start Quiz!</button>
+        <div id='correct-answers'></div>
         <section class="header-content">
             <h3>Bulbasaur</h3>
             <section class='pic-text'>
@@ -21,29 +21,38 @@
                 <section class='long-text'>Bulbasaur is a small, quadruped Pokémon that has blue-green skin with darker patches. It has red eyes with white pupils, pointed, ear-like structures on top of its head, and a short, blunt snout with a wide mouth. A pair of small, pointed teeth are visible in the upper jaw when its mouth is open. Each of its thick legs ends with three sharp claws. On its back is a green plant bulb, which is grown from a seed planted there at birth. The bulb provides it with energy through photosynthesis as well as from the nutrient-rich seeds contained within.</section>
             </section>
         </section>
-        
         <section class='header-content'>
             <h3>Charmander </h3>
             <section class='pic-text'>
                 <img src="../assets/charmander.png" alt="Charmander" width="240" height="240">
-                <section class='long-text'>Charmander is a bipedal, reptilian Pokémon with a primarily orange body and blue eyes. Its underside from the chest down and the soles of its feet are cream-colored. It has two small fangs visible in its upper jaw and two smaller fangs in its lower jaw. A fire burns at the tip of this Pokémon's slender tail and has blazed there since Charmander's birth. The flame can be used as an indication of Charmander's health and mood, burning brightly when the Pokémon is strong, weakly when it is exhausted, wavering when it is happy, and blazing when it is enraged. It is said that Charmander dies if its flame goes out. However, if the Pokémon is healthy, the flame will continue to burn even if it gets a bit wet and is said to steam in the rain.</section>    
+                <div class='long-text' id='charmander-text'>
+                    <section>Charmander is a bipedal, reptilian Pokémon with a primarily orange body and blue eyes. Its underside from the chest down and the soles of its feet are cream-colored. It has two small fangs visible in its upper jaw and two smaller fangs in its lower jaw. A fire burns at the tip of this Pokémon's slender tail and has blazed there since Charmander's birth. The flame can be used as an indication of Charmander's health and mood:</section> 
+                    <ul>
+                        <li>Burning brightly when the Pokémon is strong.</li>
+                        <li>Weakly when it is exhausted.</li> 
+                        <li>Wavering when it is happy.</li>
+                        <li>Blazing when it is enraged.</li>
+                    </ul>
+                    <section>It is said that Charmander dies if its flame goes out. However, if the Pokémon is healthy, the flame will continue to burn even if it gets a bit wet and is said to steam in the rain.</section>    
+                </div>
             </section>
         </section>
-        
         <section class='header-content'>
             <h3>Squirtle</h3>
             <section class='pic-text'>
                 <img src="../assets/squirtle.png" alt="Squirtle" width="240" height="240">
-                <section class='long-text'>Squirtle is a small Pokémon that resembles a light blue turtle. While it typically walks on its two short legs, it has been shown to run on all fours occasionally. It has large, purplish or reddish eyes and a slightly hooked upper lip. Each of its hands and feet have three pointed digits. The end of its long tail curls inward. Its body is encased by a tough shell that forms and hardens after birth. This shell is brown on the top, pale yellow on the bottom, and has a thick white ridge between the two halves.</section>    
+                <div class='long-text' id='squirtle-text'>
+                    <section>Squirtle is a small Pokémon that resembles a light blue turtle. While it typically walks on its two short legs, it has been shown to run on all fours occasionally. It has large, purplish or reddish eyes and a slightly hooked upper lip. Each of its hands and feet have three pointed digits. The end of its long tail curls inward. Its body is encased by a tough shell that forms and hardens after birth. This shell is brown on the top, pale yellow on the bottom, and has a thick white ridge between the two halves. This Pokémon is resistant to the following types:</section>    
+                    <ol>
+                        <li>Steel</li>
+                        <li>Fire</li> 
+                        <li>Water</li>
+                        <li>Ice</li>
+                    </ol>
+                </div>
             </section>
         </section>
-
-        
-        <button id='quiz-button'>Start Quiz!</button>
-        <div id='correct-answers'></div>
- 
     </main>
     <script type="module" src="app.js"></script>
 </body>
-
 </html>

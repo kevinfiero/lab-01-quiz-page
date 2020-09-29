@@ -1,1 +1,1 @@
-import './translate-to-a-yes.test.js';
+import './counts-as-a-yes.test.js';

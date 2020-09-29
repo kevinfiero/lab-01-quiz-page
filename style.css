@@ -23,9 +23,13 @@ main{
 
 }
 
+button{
+    font-size: 20px;
+    margin: 20px;
+}
+
 h3{
     text-decoration: underline;
-    
 }
 
 .pic-text{
@@ -44,9 +48,27 @@ h3{
     align-items: flex-start;
     flex-direction: row;
     word-wrap: normal;
-    height: 240px;
+    height: 200px;
     width: 500px;
     margin-left: 30px;
+
+}
+
+
+
+.lists{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.text{
+    display: flex;
+    flex-direction:column;
+    border: 2px solid black;
+
 
 }
 
@@ -58,4 +80,36 @@ h3{
     margin: 10px;
     padding: 10px;
     background: #d9ae94;
+}
+
+#correct-answers{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background: #d9ae94;
+    visibility: hidden;
+    
+}
+
+#charmander-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    word-wrap: normal;
+    height: 350px;
+}
+
+#squirtle-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    word-wrap: normal;
+    height: 300px;
 }
